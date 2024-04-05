@@ -14,6 +14,7 @@ const getSum = () => {
     const totalCell = totalRow.insertCell(0);
     totalCell.colSpan = 2;
     totalCell.textContent = "Total Price: Rs " + totalPrice.toFixed(2);
+	totalCell.id = "ans";
 };
 
 getSumBtn.addEventListener("click", getSum);
